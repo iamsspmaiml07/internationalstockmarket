@@ -7,6 +7,11 @@ import matplotlib.pyplot as plt
 API_KEY = '0ZWV6OY7JZHCIVXL'
 BASE_URL = 'https://www.alphavantage.co/query'
 
+# Set page configuration
+st.set_page_config(page_title="StockBuddy Assistant",
+                   layout="wide",
+                   page_icon="💹")
+
 def fetch_stock_data(symbol: str):
     params = {
         'function': 'TIME_SERIES_DAILY',
